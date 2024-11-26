@@ -10,7 +10,7 @@
     
     <!-- Open Graph for social media -->
     <meta property="og:title" content="Dr. Raju Ranjan Kumar Paswan - Portfolio">
-    <meta property="og:description" content="Explore the portfolio of Dr. Raju Ranjan Kumar Paswan, a data scientist, researcher, and social entrepreneur in Portugal.">
+    <meta property="og:description" content="Explore the portfolio of Dr. Raju Ranjan Kumar Paswan, a data scientist, researcher, and social entrepreneur.">
     <meta property="og:image" content="https://rrkpaswan.github.io/portfolio/images/headshots/headshot_dr_raju.jpg">
     <meta property="og:url" content="https://rrkpaswan.github.io/portfolio/">
 
@@ -72,8 +72,8 @@
         .gallery {
             position: relative;
             width: 100%;
-            max-width: 200px;
-            height: 100px;
+            max-width: 300px;
+            height: 200px;
             margin: 5px auto;
             overflow: hidden;
             border-radius: 8px;
@@ -120,6 +120,34 @@
         footer a:hover {
             color: #FFD700;
         }
+	/* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* PayPal Button Styling */
+        .paypal-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #007ACC;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .paypal-button:hover {
+            background-color: #005fa3;
+        }
     </style>
 </head>
 <body>
@@ -143,7 +171,7 @@
             I am a globally experienced researcher and data scientist with a PhD in Organisational Behaviour and Human Resource Management. Over the past five years, I have developed expertise in data analysis, social innovation, and ethical business practices, working with renowned institutions such as the European Commission in Belgium, the University of Porto in Portugal, and Universidad de las Américas Puebla in Mexico.
         </p>
         <p>
-            My passion lies in empowering individuals and organizations through data-driven strategies that drive sustainable and ethical growth. As a mentor, educator, and leader, I have shared my insights through publications and international conferences, striving to make a meaningful impact by bridging innovation with action.
+            My passion lies in empowering individuals and organisations through data-driven strategies that drive sustainable and ethical growth. As a mentor, educator, and leader, I have shared my insights through publications and international conferences, striving to make a meaningful impact by bridging innovation with action.
         </p>
 
         <!-- Core Competencies Section -->
@@ -229,7 +257,7 @@
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
     }
-</script>
+	</script>
 
         </div>
 
@@ -239,10 +267,12 @@
         <p>LinkedIn: <a href="https://linkedin.com/in/rrpaswan" target="_blank">linkedin.com/in/rrpaswan</a></p>
         <p>ORCID: <a href="https://orcid.org/0000-0003-3018-7729" target="_blank">orcid.org/0000-0003-3018-7729</a></p>
         <p>GitHub: <a href="https://github.com/rrkpaswan" target="_blank">github.com/rrkpaswan</a></p>
+        </div>
+	<a href="https://www.paypal.com/paypalme/Zudeal" class="paypal-button" target="_blank">Support My Work</a>
     </div>
-
     <footer>
         <p>© 2024 Dr. Raju Ranjan Kumar Paswan | <a href="#top">Back to top</a></p>
+	<p>Follow my work on <a href="https://www.medium.com/@rajpaswan">Medium Blog</a></p>
     </footer>
 
     <script>
