@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="-pHLM1RtieM-tPArFcwHNTu-ZCZJU963-DZ08tFR0Mk" />
-
+    <meta name="google-site-verification" content="-pHLM1RtieM-tPArFcwHNTu-ZCZJU963-DZ08tFR0Mk" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dr. Raju Ranjan Kumar Paswan's portfolio showcasing expertise in data science, social entrepreneurship, research, and teaching in Portugal.">
     <meta name="keywords" content="Data Scientist, Social Entrepreneur, Researcher, Human Resource Management, Organisational Behaviour, Data Analysis, Social Innovation, Entrepreneurship, Leadership Development, Ethical Business Practices, International Researcher, Sustainability">
     <meta name="author" content="Dr. Raju Ranjan Kumar Paswan">
     <title>Dr. Raju Ranjan Kumar Paswan - Portfolio</title>
-    
+
     <!-- Open Graph for social media -->
     <meta property="og:title" content="Dr. Raju Ranjan Kumar Paswan - Portfolio">
     <meta property="og:description" content="Explore the portfolio of Dr. Raju Ranjan Kumar Paswan, a data scientist, researcher, and social entrepreneur.">
@@ -74,7 +73,7 @@
         .gallery {
             position: relative;
             width: 100%;
-            max-width: 300px;
+            max-width: 600px;
             height: 200px;
             margin: 5px auto;
             overflow: hidden;
@@ -122,7 +121,7 @@
         footer a:hover {
             color: #FFD700;
         }
-	/* Responsive Design */
+        /* Responsive Design */
         @media screen and (max-width: 768px) {
             .container {
                 width: 90%;
@@ -170,7 +169,7 @@
         <!-- About Section -->
         <h2 id="about">About Me</h2>
         <p>
-            I am a globally experienced researcher and data scientist with a PhD in Organisational Behaviour and Human Resource Management. Over the past five years, I have developed expertise in data analysis, social innovation, and ethical business practices, working with renowned institutions such as the European Commission in Belgium, the University of Porto in Portugal, and Universidad de las Américas Puebla in Mexico.
+            I am a researcher and data scientist with a PhD in Organisational Behaviour and Human Resource Management. Over the past five years, I have developed expertise in data analysis, social innovation, and ethical business practices, working with renowned institutions such as the European Commission in Belgium, the University of Porto in Portugal, and Universidad de las Américas Puebla in Mexico.
         </p>
         <p>
             My passion lies in empowering individuals and organisations through data-driven strategies that drive sustainable and ethical growth. As a mentor, educator, and leader, I have shared my insights through publications and international conferences, striving to make a meaningful impact by bridging innovation with action.
@@ -190,7 +189,7 @@
         <h2 id="experience">Professional Experience</h2>
         <ul>
             <li><strong>Senior Researcher</strong> - Polytechnic Institute, Portugal (Dec 2023 – Present)</li>
-            <li><strong>Senior Customer Service Advisor</strong> - Airbnb, Lisbon, Portugal (Oct 2022 – Nov 2023)</li>
+            <li><strong>Senior Advisor</strong> - Airbnb, Lisbon, Portugal (Oct 2022 – Nov 2023)</li>
             <li><strong>Blue Book Trainee</strong> - European Commission, Brussels, Belgium (Mar 2022 – Jul 2022)</li>
         </ul>
 
@@ -206,96 +205,56 @@
             <h3>Papers Under Review</h3>
             <ul>
                 <li><strong>Paswan, Kumar, Beck, and Kumari A.</strong> - Low-Fee Private School Choice Among Disadvantaged Communities in India: A Bordieuan Perspective. International Journal of Educational Development.</li>
-                <li><strong>Paswan, Proenca, and Cabral-Cardoso</strong> - A Phenomenological Study of Motivation for Social Entrepreneurship. International Journal of Entrepreneurial Behaviour & Research.</li>
+                <li><strong>Paswan, Proenca, and Cabral-Cardoso</strong> - Identity and Sustainability Challenges in Social Entrepreneurship.</li>
             </ul>
         </ul>
 
-        <!-- Summer Schools & Trainings Section -->
-        <h2>Summer Schools and Trainings</h2>
-        <ul>
-            <li>European Summer School on Social Economy (ESSE), University of Bologna, Forlì Campus School of Economics, Management and Statistics, Italy, July 8th – 13th, 2013</li>
-            <li>Facing Opportunities - Managing Risks 2013, Goethe-University Frankfurt, Germany 24-26 May 2013</li>
-            <li>Solar Generation International Skill Share and Greenpeace India Youth Representation in United Nation’s IPCC, Bangkok, Thailand, 26 April - 4 May 2007</li>
-        </ul>
-
-        <!-- Blog Publication Section -->
-        <h2>Blog Publication</h2>
-        <p>A Quest to Understand the Heroic Notion of Social Entrepreneur (April 22, 2021). EMES Junior Experts' Blog, Belgium. <a href="https://emesphdnetwork.wordpress.com/2021/04/22/a-quest-to-understand-the-heroic-notion-of-social-entrepreneur/" target="_blank">Read the article</a>.</p>
-
+        <!-- Gallery Section -->
         <h2 id="gallery">Gallery</h2>
-<div class="gallery">
-    <img src="images/headshots/headshot_dr_raju.jpg" class="active" alt="Professional Headshot">
-    <img src="images/raj_photos/raj_photo_01.jpeg" alt="Dr. Rajuh">
-    <img src="images/raj_photos/raj_photo_02.jpeg" alt="Dr. Raju">
-    <img src="images/raj_photos/raj_photo_03.jpeg" alt="Dr. Raju">
-    <img src="images/raj_photos/raj_photo_04.jpeg" alt="Dr. Raju">
-    <img src="images/raj_photos/raj_photo_05.jpeg" alt="Dr. Raju">
-    <img src="images/raj_photos/raj_photo_06.jpeg" alt="Dr. Raju">
-    <img src="images/raj_photos/raj_photo_07.jpeg" alt="Dr. Raju">
-    <img src="images/raj_photos/raj_photo_08.jpeg" alt="Dr. Raju">
-    <img src="images/raj_photos/raj_photo_09.jpg" alt="Dr. Raju">
-    <div class="controls">
-        <button onclick="prevSlide()">&#9664;</button>
-        <button onclick="nextSlide()">&#9654;</button>
-    </div>
-</div>
-
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.gallery img');
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-    }
-	</script>
-
+        <div class="gallery">
+            <img src="https://rrkpaswan.github.io/portfolio/images/slider/slide1.jpg" class="active">
+            <img src="https://rrkpaswan.github.io/portfolio/images/slider/slide2.jpg">
+            <img src="https://rrkpaswan.github.io/portfolio/images/slider/slide3.jpg">
+            <div class="controls">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
         </div>
 
         <!-- Contact Section -->
         <h2 id="contact">Contact</h2>
-        <p>Email: <a href="mailto:rrpaswan18@gmail.com">rrpaswan18@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/rrpaswan" target="_blank">linkedin.com/in/rrpaswan</a></p>
-        <p>ORCID: <a href="https://orcid.org/0000-0003-3018-7729" target="_blank">orcid.org/0000-0003-3018-7729</a></p>
-        <p>GitHub: <a href="https://github.com/rrkpaswan" target="_blank">github.com/rrkpaswan</a></p>
+        <p>For inquiries or collaborations, please contact me via email at <a href="mailto:rrkpaswan@gmail.com">rrkpaswan@gmail.com</a></p>
+        <p>You can also find me on LinkedIn: <a href="https://www.linkedin.com/in/raju-ranjan-paswan/" target="_blank">Raju Ranjan Kumar Paswan</a></p>
+
+        <div class="paypal-button">
+            <a href="https://www.paypal.com/donate?hosted_button_id=rrpaswan@gmail.com">Donate via PayPal</a>
         </div>
-	<a href="https://www.paypal.com/paypalme/projectorenal" class="paypal-button" target="_blank">Paypal</a>
     </div>
+
     <footer>
-        <p>© 2024 Dr. Raju Ranjan Kumar Paswan | <a href="#top">Back to top</a></p>
-	<p>Follow my work on <a href="https://www.medium.com/@rrpaswan">Medium Blog</a></p>
+        <p>&copy; 2025 Dr. Raju Ranjan Kumar Paswan. All rights reserved.</p>
     </footer>
 
     <script>
+        // Gallery Slide Show Functionality
         let currentSlide = 0;
         const slides = document.querySelectorAll('.gallery img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
 
         function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
         }
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
+        prevButton.addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
 
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
+        nextButton.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
     </script>
 </body>
 </html>
