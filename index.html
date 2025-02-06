@@ -208,13 +208,32 @@
                 <li><strong>Paswan, Proenca, and Cabral-Cardoso</strong> - Identity and Sustainability Challenges in Social Entrepreneurship.</li>
             </ul>
         </ul>
+    </ul>
 
+    <!-- Summer Schools & Trainings Section -->
+    <h2>Summer Schools and Trainings</h2>
+    <ul>
+        <li>European Summer School on Social Economy (ESSE), University of Bologna, Forlì Campus School of Economics, Management and Statistics, Italy, July 8th – 13th, 2013</li>
+        <li>Facing Opportunities - Managing Risks 2013, Goethe-University Frankfurt, Germany 24-26 May 2013</li>
+        <li>Solar Generation International Skill Share and Greenpeace India Youth Representation in United Nation’s IPCC, Bangkok, Thailand, 26 April - 4 May 2007</li>
+    </ul>
+        <!-- Blog Publication Section -->
+        <h2>Blog Publication</h2>
+        <p>A Quest to Understand the Heroic Notion of Social Entrepreneur (April 22, 2021). EMES Junior Experts' Blog, Belgium. <a href="https://emesphdnetwork.wordpress.com/2021/04/22/a-quest-to-understand-the-heroic-notion-of-social-entrepreneur/" target="_blank">Read the article</a>.</p>
+        
         <!-- Gallery Section -->
         <h2 id="gallery">Gallery</h2>
         <div class="gallery">
-            <img src="https://rrkpaswan.github.io/portfolio/images/slider/slide1.jpg" class="active">
-            <img src="https://rrkpaswan.github.io/portfolio/images/slider/slide2.jpg">
-            <img src="https://rrkpaswan.github.io/portfolio/images/slider/slide3.jpg">
+            <img src="images/headshots/headshot_dr_raju.jpg" class="active" alt="Professional Headshot">
+        <img src="images/raj_photos/raj_photo_01.jpeg" alt="Dr. Rajuh">
+        <img src="images/raj_photos/raj_photo_02.jpeg" alt="Dr. Raju">
+        <img src="images/raj_photos/raj_photo_03.jpeg" alt="Dr. Raju">
+        <img src="images/raj_photos/raj_photo_04.jpeg" alt="Dr. Raju">
+        <img src="images/raj_photos/raj_photo_05.jpeg" alt="Dr. Raju">
+        <img src="images/raj_photos/raj_photo_06.jpeg" alt="Dr. Raju">
+        <img src="images/raj_photos/raj_photo_07.jpeg" alt="Dr. Raju">
+        <img src="images/raj_photos/raj_photo_08.jpeg" alt="Dr. Raju">
+        <img src="images/raj_photos/raj_photo_09.jpeg" alt="Dr. Raju">
             <div class="controls">
                 <button class="prev">&#10094;</button>
                 <button class="next">&#10095;</button>
@@ -223,14 +242,13 @@
 
         <!-- Contact Section -->
         <h2 id="contact">Contact</h2>
-        <p>For inquiries or collaborations, please contact me via email at <a href="mailto:rrkpaswan@gmail.com">rrkpaswan@gmail.com</a></p>
-        <p>You can also find me on LinkedIn: <a href="https://www.linkedin.com/in/raju-ranjan-paswan/" target="_blank">Raju Ranjan Kumar Paswan</a></p>
-
-        <div class="paypal-button">
-            <a href="https://www.paypal.com/donate?hosted_button_id=rrpaswan@gmail.com">Donate via PayPal</a>
+        <p>Email: <a href="mailto:rrpaswan18@gmail.com">rrpaswan18@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/rrpaswan" target="_blank">linkedin.com/in/rrpaswan</a></p>
+        <p>ORCID: <a href="https://orcid.org/0000-0003-3018-7729" target="_blank">orcid.org/0000-0003-3018-7729</a></p>
+        <p>GitHub: <a href="https://github.com/rrkpaswan" target="_blank">github.com/rrkpaswan</a></p>
         </div>
+	    <a href="https://www.paypal.com/paypalme/projectorenal" class="paypal-button" target="_blank">Paypal</a>
     </div>
-
     <footer>
         <p>&copy; 2025 Dr. Raju Ranjan Kumar Paswan. All rights reserved.</p>
     </footer>
@@ -239,22 +257,26 @@
         // Gallery Slide Show Functionality
         let currentSlide = 0;
         const slides = document.querySelectorAll('.gallery img');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
 
         function showSlide(index) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (index + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
         }
 
-        prevButton.addEventListener('click', () => {
-            showSlide(currentSlide - 1);
-        });
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
 
-        nextButton.addEventListener('click', () => {
-            showSlide(currentSlide + 1);
-        });
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(nextSlide, 3000);  // 3000 milliseconds = 3 seconds
     </script>
 </body>
 </html>
+
